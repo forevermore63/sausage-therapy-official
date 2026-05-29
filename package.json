@@ -1,0 +1,16 @@
+{
+  "name": "sausage-therapy-official",
+  "version": "1.0.0",
+  "description": "Income-producing digital storefront for Sausage Therapy / Noosa Dachshunds",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linting configured yet'"
+  },
+  "keywords": ["sausage-therapy", "ndis", "therapy-dogs"],
+  "author": "Emily Blue Richards",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
