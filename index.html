@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sausage Therapy | Dachshund-Assisted Therapy Mudgee &amp; Central West NSW</title>
+    <meta name="description" content="Sausage Therapy — Premium miniature dachshund-assisted therapy, emotional support, NDIS services, corporate team building &amp; mobile wellness experiences serving Mudgee and the Central West NSW surrounds. Book transformative sessions across the region.">
+    <meta name="keywords" content="sausage therapy, mudgee therapy dogs, central west nsw dachshund therapy, animal assisted therapy mudgee, NDIS pet therapy mudgee, emotional support dogs mudgee, corporate team building mudgee, mobile therapy nsw, wiener coaster">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500;600&amp;display=swap');
+        
+        :root {
+            --green-deep: #0F2A1F;
+            --green-mid: #1A3A2A;
+            --cream: #F8F4EC;
+            --brown: #8B5E3C;
+            --gold: #C9A227;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .section-header {
+            font-size: 3rem;
+            line-height: 1.05;
+            font-weight: 700;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(15, 42, 31, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        .premium-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+
+        .dachshund-gold {
+            color: #C9A227;
+        }
+
+        .luxury-gradient {
+            background: linear-gradient(135deg, #0F2A1F 0%, #1A3A2A 100%);
+        }
+
+        .warm-gradient {
+            background: linear-gradient(to bottom, #F8F4EC, #F1E9D9);
+        }
+
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #C9A227;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .therapy-bg {
+            background-image: linear-gradient(rgba(15, 42, 31, 0.65), rgba(15, 42, 31, 0.75)), url('./images/hero-dachshunds.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+
+        .wiener-accent {
+            position: relative;
+        }
+        
+        .wiener-accent:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #C9A227, #8B5E3C);
+        }
+
+        .dog-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-[#F8F4EC] text-[#0F2A1F]">
+    <!-- NAV -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all bg-white/95 border-b border-[#0F2A1F]/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-[#0F2A1F] rounded-2xl flex items-center justify-center">
+                        <span class="text-white text-3xl font-bold tracking-tighter">ST</span>
+                    </div>
+                    <div>
+                        <div class="font-bold text-2xl tracking-tighter">Sausage Therapy</div>
+                        <div class="text-[10px] text-[#0F2A1F]/60 -mt-1.5 tracking-[2px]">MUDGEE &amp; CENTRAL WEST NSW</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#experience" class="nav-link text-[#0F2A1F]/80 hover:text-[#0F2A1F]">The Experience</a>
+                    <a href="#the-pack" class="nav-link text-[#0F2A1F]/80 hover:text-[#0F2A1F]">The Pack</a>
+                    <a href="#services" class="nav-link text-[#0F2A1F]/80 hover:text-[#0F2A1F]">Experiences</a>
+                    <a href="#corporate" class="nav-link text-[#0F2A1F]/80 hover:text-[#0F2A1F]">Corporate</a>
+                    <a href="#ndis" class="nav-link text-[#0F2A1F]/80 hover:text-[#0F2A1F]">NDIS &amp; Partners</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="#book" 
+                       class="hidden sm:inline-flex items-center px-6 py-3 text-sm font-semibold rounded-2xl bg-[#0F2A1F] text-white hover:bg-black transition-colors">
+                        Book Session
+                    </a>
+                    <button onclick="showMobileMenu()"
+                            class="md:hidden w-11 h-11 flex items-center justify-center text-[#0F2A1F]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="therapy-bg min-h-[100dvh] flex items-center pt-20 relative">
+        <div class="max-w-5xl mx-auto px-6 pb-16">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-white/60">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="text-xs font-semibold tracking-widest text-[#0F2A1F]">MUDGEE &amp; CENTRAL WEST NSW • MOBILE THERAPY</span>
+                </div>
+                
+                <h1 class="heading-serif text-7xl md:text-8xl leading-[0.92] tracking-tighter text-white mb-4">
+                    Healing happens<br>one sausage<br>at a time.
+                </h1>
+                
+                <p class="max-w-lg text-xl text-white/90 mb-10">
+                    Premium dachshund-assisted therapy experiences serving Mudgee and the Central West NSW surrounds. 
+                    Emotional support, NDIS, corporate wellness &amp; mobile sessions across the region.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#book" 
+                       class="inline-flex justify-center items-center gap-x-3 px-10 py-5 rounded-3xl bg-white text-[#0F2A1F] font-semibold text-lg hover:bg-[#C9A227] hover:text-white transition-all active:scale-[0.985]">
+                        <span>Book Your Session</span>
+                    </a>
+                    <a href="#corporate" 
+                       class="inline-flex justify-center items-center gap-x-3 px-8 py-5 rounded-3xl border-2 border-white/70 text-white font-semibold text-lg hover:bg-white/10 transition-all">
+                        Corporate &amp; Events
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center gap-x-8 text-white/80 text-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-7 h-7 bg-white/30 rounded-full border border-white/50"></div>
+                        <div class="w-7 h-7 bg-white/30 rounded-full border border-white/50"></div>
+                        <div class="w-7 h-7 bg-white/30 rounded-full border border-white/50"></div>
+                    </div>
+                    <div>Trusted across regional NSW • NDIS • Corporate clients</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
+            <div class="flex flex-col items-center text-white/60 text-xs tracking-[3px]">
+                SCROLL TO BEGIN <i class="fa-solid fa-chevron-down mt-1"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-[#0F2A1F] py-5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-white/80 text-sm font-medium tracking-wider">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check-double"></i> 
+                    <span>10+ YEARS BREEDING &amp; TRAINING</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check-double"></i> 
+                    <span>NDIS ALIGNED • REGIONAL NSW</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check-double"></i> 
+                    <span>MOBILE THERAPY • MUDGEE &amp; SURROUNDS</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check-double"></i> 
+                    <span>CORPORATE &amp; PRIVATE EVENTS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE EXPERIENCE -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            <div class="md:col-span-7">
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-[#8B5E3C] mb-3">THE SAUSAGE THERAPY METHOD</div>
+                <h2 class="heading-serif text-6xl tracking-tighter leading-none mb-6">Not just dogs.<br>Profound, measurable healing.</h2>
+                
+                <div class="prose prose-lg text-[#0F2A1F]/80 max-w-xl">
+                    <p class="text-xl">Miniature Dachshunds bring an extraordinary combination of intelligence, emotional intuition and calm presence that makes them uniquely powerful therapeutic partners in regional settings.</p>
+                    
+                    <p>Our dogs are purpose-bred and trained for emotional support and deep nervous system regulation. We deliver transformative experiences right across Mudgee and the Central West NSW surrounds.</p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 mt-10 md:mt-0">
+                <div class="bg-white rounded-3xl p-8 shadow-xl border border-[#0F2A1F]/5">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-9 h-9 flex-shrink-0 mt-0.5"><i class="fa-solid fa-brain text-3xl text-[#C9A227]"></i></div>
+                            <div>
+                                <div class="font-semibold">Nervous System Regulation</div>
+                                <div class="text-sm text-[#0F2A1F]/70">Lower stress, reduce anxiety &amp; support emotional wellbeing through targeted interaction</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-9 h-9 flex-shrink-0 mt-0.5"><i class="fa-solid fa-heart-pulse text-3xl text-[#C9A227]"></i></div>
+                            <div>
+                                <div class="font-semibold">Mobile Regional Service</div>
+                                <div class="text-sm text-[#0F2A1F]/70">We come to you across Mudgee, Gulgong, Rylstone, Kandos &amp; surrounding areas</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-9 h-9 flex-shrink-0 mt-0.5"><i class="fa-solid fa-users text-3xl text-[#C9A227]"></i></div>
+                            <div>
+                                <div class="font-semibold">Corporate &amp; Community</div>
+                                <div class="text-sm text-[#0F2A1F]/70">Unique team building and wellness experiences tailored for regional NSW</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PACK -->
+    <section id="the-pack" class="bg-[#0F2A1F] py-16 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <div class="text-[#C9A227] text-xs tracking-[3px] font-semibold">MEET THE THERAPY PACK</div>
+                    <h3 class="heading-serif text-white text-6xl tracking-tighter">Purpose-bred.<br>Deeply trained.<br>Extraordinary companions.</h3>
+                </div>
+                <a href="#book" class="hidden md:block text-sm font-medium border-b border-white/40 hover:border-white pb-1">Inquire about placements &rarr;</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Dog cards unchanged for brevity -->
+                <div class="bg-white/5 backdrop-blur rounded-3xl p-7 border border-white/10">
+                    <div class="aspect-[4/3] bg-[#1A3A2A] rounded-2xl mb-6 overflow-hidden">
+                        <img src="./images/emily-with-dog.jpg" class="w-full h-full object-cover" alt="Therapy dachshund with handler">
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight">Emotional Support Line</div>
+                    <div class="text-[#C9A227] text-sm font-medium mt-1">Miniature • Cream &amp; Standard</div>
+                    <div class="mt-4 text-white/80 text-[15px]">
+                        Our core emotional support dogs. Exceptionally intuitive and bonded for deep one-on-one work supporting mental health and emotional regulation across regional NSW.
+                    </div>
+                    <div class="mt-5 text-xs uppercase tracking-widest text-white/50">PERSONAL • NDIS • MOBILE SESSIONS</div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-3xl p-7 border border-white/10">
+                    <div class="aspect-[4/3] bg-[#1A3A2A] rounded-2xl mb-6 overflow-hidden">
+                        <img src="./images/hero-dachshunds.jpg" class="w-full h-full object-cover" alt="Cream and black miniature dachshunds">
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight">Mobile Regional Therapy</div>
+                    <div class="text-[#C9A227] text-sm font-medium mt-1">Serving Mudgee &amp; Surrounds</div>
+                    <div class="mt-4 text-white/80 text-[15px]">
+                        Bringing calm, connection and joy directly to homes, workplaces and communities across the Central West. Perfect for those who need support closer to home.
+                    </div>
+                    <div class="mt-5 text-xs uppercase tracking-widest text-white/50">MUDGEE • GULGONG • RYLSTONE • KANDOS</div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur rounded-3xl p-7 border border-white/10">
+                    <div class="aspect-[4/3] bg-[#1A3A2A] rounded-2xl mb-6 overflow-hidden flex items-center justify-center">
+                        <div class="text-center px-6">
+                            <i class="fa-solid fa-paw text-6xl text-[#C9A227]/70 mb-3"></i>
+                            <div class="text-white/90">Future placements available</div>
+                            <div class="text-xs mt-1 text-white/50">Service dog &amp; advanced programs expanding in regional NSW</div>
+                        </div>
+                    </div>
+                    <div class="font-semibold text-2xl tracking-tight">Growing in Regional NSW</div>
+                    <div class="text-[#C9A227] text-sm font-medium mt-1">Expanding lines</div>
+                    <div class="mt-4 text-white/80 text-[15px]">
+                        Building the next generation of highly skilled miniature dachshund therapy dogs to serve the unique needs of Central West communities.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE EXPERIENCES -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="text-[#8B5E3C] text-xs tracking-[3px] font-semibold">SIGNATURE EXPERIENCES</div>
+            <h2 class="heading-serif text-6xl tracking-tighter mt-2">Transformative encounters.<br>Designed for the region.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Private -->
+            <div class="service-card bg-white rounded-3xl p-8 border border-[#0F2A1F]/10 flex flex-col">
+                <div class="flex-1">
+                    <div class="w-12 h-12 bg-[#0F2A1F] text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-user-heart text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-3xl tracking-tight">1:1 Personal Therapy Sessions</h4>
+                    <p class="mt-4 text-[#0F2A1F]/70">Private sessions with our trained therapy dachshunds. Ideal for anxiety, trauma recovery, emotional regulation and wellbeing support in the comfort of your own space or our mobile unit.</p>
+                    
+                    <ul class="mt-6 space-y-2 text-sm">
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>60 or 90 minute sessions</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Mobile across Mudgee &amp; surrounds</span></li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Progress notes for NDIS</span></li>
+                    </ul>
+                </div>
+                <a href="#book" class="mt-8 inline-block text-sm font-semibold text-[#0F2A1F] hover:text-[#C9A227]">Reserve your session →</a>
+            </div>
+
+            <!-- Mobile -->
+            <div class="service-card bg-white rounded-3xl overflow-hidden border border-[#0F2A1F]/10 flex flex-col">
+                <div class="h-56 overflow-hidden">
+                    <img src="./images/mobile-therapy-van.jpg" class="w-full h-full object-cover" alt="Mobile therapy van">
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex-1">
+                        <div class="uppercase text-xs tracking-widest text-[#C9A227] font-semibold">MOBILE UNIT</div>
+                        <h4 class="font-semibold text-3xl tracking-tight mt-1">Mobile Therapy Across the Region</h4>
+                        <p class="mt-3 text-[#0F2A1F]/70">Our custom mobile unit brings premium therapy directly to you — homes, workplaces, schools and events across Mudgee, Gulgong, Rylstone, Kandos and the wider Central West.</p>
+                    </div>
+                    <a href="#book" class="mt-auto pt-6 block text-sm font-semibold">Request mobile deployment →</a>
+                </div>
+            </div>
+
+            <!-- Corporate / Events -->
+            <div class="service-card bg-white rounded-3xl p-8 border border-[#0F2A1F]/10 flex flex-col">
+                <div class="flex-1">
+                    <div class="w-12 h-12 bg-[#8B5E3C] text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-mountain text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-3xl tracking-tight">Corporate, Private &amp; Community Events</h4>
+                    <p class="mt-4 text-[#0F2A1F]/70">Unique wellness and team-building experiences for businesses, private celebrations and community groups in the Mudgee wine region and surrounds. Perfect for retreats, offsites and special occasions.</p>
+                    
+                    <div class="mt-6 inline-flex items-center text-xs px-4 py-1.5 rounded-2xl bg-[#F8F4EC] text-[#0F2A1F]/70">
+                        MUDGEE WINE REGION • RURAL NSW
+                    </div>
+                </div>
+                <a href="#book" class="mt-8 inline-block text-sm font-semibold">Enquire about events →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE -->
+    <section id="corporate" class="bg-[#0F2A1F] py-16 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                <div class="md:col-span-5">
+                    <div class="text-[#C9A227] tracking-[3px] text-xs font-semibold">FOR LEADERS &amp; ORGANISATIONS</div>
+                    <h2 class="heading-serif text-6xl tracking-tighter mt-3 leading-none">Wiener Coaster.<br>Real connection.<br>Regional impact.</h2>
+                    
+                    <p class="mt-6 text-white/80 max-w-md">Our signature corporate and community experiences use the unique power of miniature dachshunds to build psychological safety, reduce stress and create memorable shared moments — tailored for Mudgee and Central West NSW workplaces and groups.</p>
+                    
+                    <div class="mt-8">
+                        <a href="#book" class="inline-flex items-center gap-x-2 px-7 py-4 rounded-2xl bg-white text-[#0F2A1F] font-semibold hover:bg-[#C9A227] hover:text-white transition">
+                            Book a Corporate Experience
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 mt-12 md:mt-0">
+                    <div class="rounded-3xl overflow-hidden border border-white/10">
+                        <img src="./images/corporate-wiener.jpg" class="w-full" alt="Corporate team building with dachshunds">
+                    </div>
+                    <div class="grid grid-cols-3 gap-px bg-white/10 mt-px">
+                        <div class="bg-[#0F2A1F] p-5 text-center">
+                            <div class="text-3xl font-semibold">High Impact</div>
+                            <div class="text-xs text-white/60 mt-1">FOR REGIONAL TEAMS</div>
+                        </div>
+                        <div class="bg-[#0F2A1F] p-5 text-center">
+                            <div class="text-3xl font-semibold">4.9★</div>
+                            <div class="text-xs text-white/60 mt-1">AVERAGE EVENT RATING</div>
+                        </div>
+                        <div class="bg-[#0F2A1F] p-5 text-center">
+                            <div class="text-3xl font-semibold">Mobile</div>
+                            <div class="text-xs text-white/60 mt-1">WE COME TO YOU</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NDIS & PARTNERS -->
+    <section id="ndis" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="max-w-2xl">
+            <div class="text-[#8B5E3C] text-xs tracking-[3px] font-semibold">NDIS • REGIONAL NSW</div>
+            <h2 class="heading-serif text-6xl tracking-tighter mt-3">Animal-assisted support that works in the regions.</h2>
+        </div>
+        
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+            <div class="premium-card bg-white p-9 rounded-3xl border">
+                <h4 class="font-semibold text-2xl">NDIS Participants in Central West NSW</h4>
+                <p class="mt-4">We work with NDIS participants across Mudgee and the surrounds to deliver meaningful therapeutic supports. Sessions support emotional regulation, social connection and capacity building goals — delivered where you are.</p>
+                <div class="mt-6 text-sm">
+                    <div class="font-medium">We provide:</div>
+                    <ul class="mt-2 space-y-1 text-[#0F2A1F]/80">
+                        <li>• Service agreements &amp; progress reports</li>
+                        <li>• Mobile sessions across the region</li>
+                        <li>• Goal-aligned animal-assisted support</li>
+                    </ul>
+                </div>
+                <a href="#book" class="mt-8 block text-sm font-semibold text-[#C9A227]">Discuss NDIS options →</a>
+            </div>
+            
+            <div class="premium-card bg-white p-9 rounded-3xl border">
+                <h4 class="font-semibold text-2xl">Providers, Community &amp; Partners</h4>
+                <p class="mt-4">Open to partnerships with NDIS providers, allied health teams, community organisations and businesses in the Mudgee region looking to bring innovative animal-assisted supports to Central West NSW.</p>
+                
+                <div class="mt-6">
+                    <div class="text-sm font-medium mb-2">Open to:</div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="text-xs px-4 py-1 bg-[#F8F4EC] rounded-2xl">NDIS Provider Partnerships</div>
+                        <div class="text-xs px-4 py-1 bg-[#F8F4EC] rounded-2xl">Community &amp; Wellness Programs</div>
+                        <div class="text-xs px-4 py-1 bg-[#F8F4EC] rounded-2xl">Regional Corporate Events</div>
+                    </div>
+                </div>
+                <a href="#book" class="mt-8 block text-sm font-semibold">Start a conversation →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK / CONTACT -->
+    <section id="book" class="bg-[#0F2A1F] py-16 text-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="text-[#C9A227] tracking-[2px] text-xs font-semibold">NEXT STEP</div>
+            <h2 class="heading-serif text-white text-6xl tracking-tighter mt-3">Ready to experience<br>the difference in the region?</h2>
+            <p class="mt-4 max-w-md mx-auto text-white/70">Whether you're seeking personal support, planning a corporate or community event, or exploring NDIS options across Mudgee and surrounds — we're here.</p>
+            
+            <div class="mt-10 grid sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+                <a href="mailto:emilybluerichards@gmail.com?subject=Private%20Therapy%20Session%20Inquiry" 
+                   class="flex flex-col items-center justify-center gap-y-1.5 bg-white text-[#0F2A1F] font-semibold py-6 px-5 rounded-3xl hover:bg-[#C9A227] hover:text-white transition group">
+                    <i class="fa-solid fa-calendar text-2xl group-hover:scale-110 transition"></i>
+                    <div class="text-sm mt-1">Book Private Session</div>
+                </a>
+                
+                <a href="mailto:emilybluerichards@gmail.com?subject=Corporate%20%2F%20Event%20Inquiry%20-%20Mudgee" 
+                   class="flex flex-col items-center justify-center gap-y-1.5 border border-white/40 hover:bg-white/5 py-6 px-5 rounded-3xl transition">
+                    <i class="fa-solid fa-briefcase text-2xl"></i>
+                    <div class="text-sm mt-1">Corporate &amp; Events (Mudgee)</div>
+                </a>
+                
+                <a href="mailto:emilybluerichards@gmail.com?subject=NDIS%20Inquiry%20-%20Central%20West%20NSW" 
+                   class="flex flex-col items-center justify-center gap-y-1.5 border border-white/40 hover:bg-white/5 py-6 px-5 rounded-3xl transition">
+                    <i class="fa-solid fa-handshake text-2xl"></i>
+                    <div class="text-sm mt-1">NDIS &amp; Regional Support</div>
+                </a>
+                
+                <a href="mailto:emilybluerichards@gmail.com?subject=Mobile%20Therapy%20Request%20-%20Mudgee%20Region" 
+                   class="flex flex-col items-center justify-center gap-y-1.5 border border-white/40 hover:bg-white/5 py-6 px-5 rounded-3xl transition">
+                    <i class="fa-solid fa-van-shuttle text-2xl"></i>
+                    <div class="text-sm mt-1">Mobile Therapy Request</div>
+                </a>
+            </div>
+            
+            <div class="mt-10 text-xs text-white/50">
+                Direct: emilybluerichards@gmail.com &nbsp;•&nbsp; Mobile: 04 999 38590<br>
+                Serving Mudgee &amp; Central West NSW surrounds • Mobile unit ready
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL VISION -->
+    <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-[#8B5E3C] text-xs tracking-[3px]">THE VISION</div>
+            <h3 class="heading-serif text-5xl tracking-tighter mt-3">Bringing premium dachshund-assisted therapy to Mudgee and the Central West NSW.</h3>
+            <p class="mt-6 text-[#0F2A1F]/70">Building meaningful impact in regional communities through mobile therapy, NDIS support, corporate wellness and unforgettable experiences with the pack.</p>
+        </div>
+    </section>
+
+    <footer class="bg-[#0F2A1F] text-white/70 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-y-10">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <div class="w-9 h-9 bg-white/10 rounded-2xl flex items-center justify-center">
+                        <span class="font-bold text-white">ST</span>
+                    </div>
+                    <div class="font-semibold text-white tracking-tight">Sausage Therapy</div>
+                </div>
+                <div class="text-xs">Mudgee &amp; Central West NSW • Mobile Therapy Unit</div>
+                <div class="mt-6 text-xs max-w-xs">Delivering calm, connection and transformation across regional New South Wales.</div>
+            </div>
+            
+            <div class="md:col-span-3 text-xs space-y-1.5">
+                <div class="font-medium text-white/90 mb-2">EXPLORE</div>
+                <div>The Experience</div>
+                <div>Corporate &amp; Events</div>
+                <div>NDIS Support</div>
+                <div>Mobile Therapy</div>
+            </div>
+            
+            <div class="md:col-span-4 text-xs">
+                <div class="font-medium text-white/90 mb-2">CONNECT</div>
+                <div>emilybluerichards@gmail.com</div>
+                <div>04 999 38590</div>
+                <div class="mt-3">Mudgee region, Central West NSW<br>Mobile across the surrounds</div>
+                
+                <div class="mt-8 text-[10px] text-white/40">Platform built for regional impact and scalable growth.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL (kept same) -->
+    <div id="booking-modal" onclick="if (event.target.id === 'booking-modal') closeBookingModal()" class="hidden fixed inset-0 bg-black/70 z-[100] flex items-center justify-center p-4">
+        <div onclick="event.stopImmediatePropagation()" class="modal bg-white w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl">
+            <div class="px-8 pt-8 pb-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-bold text-3xl tracking-tighter">Book Your Experience</div>
+                        <div id="modal-service-name" class="text-emerald-700 font-medium mt-1"></div>
+                    </div>
+                    <button onclick="closeBookingModal()" class="text-3xl leading-none text-slate-400 hover:text-slate-600">&times;</button>
+                </div>
+
+                <form id="booking-form" onsubmit="submitBookingForm(event)" class="mt-8 space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="text-xs font-medium text-slate-500 block mb-1.5">FULL NAME</label>
+                            <input type="text" id="full-name" required class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium text-slate-500 block mb-1.5">PHONE</label>
+                            <input type="tel" id="phone" required class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="text-xs font-medium text-slate-500 block mb-1.5">EMAIL ADDRESS</label>
+                        <input type="email" id="email" required class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="text-xs font-medium text-slate-500 block mb-1.5">PREFERRED DATE</label>
+                            <input type="date" id="preferred-date" class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium text-slate-500 block mb-1.5">TIME PREFERENCE</label>
+                            <select id="time-pref" class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none">
+                                <option>Morning (9am - 12pm)</option>
+                                <option>Afternoon (12pm - 4pm)</option>
+                                <option>Evening (4pm - 7pm)</option>
+                                <option>Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-medium text-slate-500 block mb-1.5">ANYTHING ELSE WE SHOULD KNOW?</label>
+                        <textarea id="notes" rows="3" placeholder="Goals, NDIS plan number, preferred location in Mudgee region..." class="w-full border border-slate-200 focus:border-emerald-600 rounded-2xl px-4 py-3 text-sm outline-none resize-y"></textarea>
+                    </div>
+
+                    <div class="pt-3">
+                        <button type="submit" 
+                                class="w-full py-4 bg-emerald-800 hover:bg-emerald-900 active:bg-black transition font-bold text-white rounded-2xl text-base flex items-center justify-center gap-x-2">
+                            <span>SEND ENQUIRY &amp; SECURE MY SPOT</span>
+                        </button>
+                        <p class="text-center text-[10px] text-slate-400 mt-3">We'll confirm availability within 2 hours. A deposit secures your booking.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-gold', '#C9A227');
+        }
+        
+        function initNavbar() {
+            const nav = document.getElementById('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled', 'shadow-sm');
+                } else {
+                    nav.classList.remove('nav-scrolled', 'shadow-sm');
+                }
+            });
+        }
+        
+        let selectedService = '';
+
+        function selectServiceAndBook(serviceName) {
+            selectedService = serviceName;
+            openBookingModal();
+        }
+
+        function openBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            const serviceEl = document.getElementById('modal-service-name');
+            if (selectedService) {
+                serviceEl.textContent = selectedService;
+            } else {
+                serviceEl.textContent = 'General Enquiry / Custom Experience in Mudgee region';
+            }
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            selectedService = '';
+        }
+
+        function submitBookingForm(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('full-name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                date: document.getElementById('preferred-date').value,
+                time: document.getElementById('time-pref').value,
+                notes: document.getElementById('notes').value,
+                service: selectedService || 'General Enquiry - Mudgee region'
+            };
+
+            console.log('Booking enquiry for Mudgee region:', formData);
+            
+            const modalContent = document.querySelector('#booking-modal > div');
+            modalContent.innerHTML = `
+                <div class="p-10 text-center">
+                    <div class="mx-auto w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-check text-emerald-600 text-4xl"></i>
+                    </div>
+                    <div class="font-bold text-3xl tracking-tight mb-3">Enquiry Received!</div>
+                    <p class="text-slate-600 mb-8">Thank you, ${formData.name.split(' ')[0]}. We'll contact you within 2 hours to confirm availability across the Mudgee region.</p>
+                    
+                    <button onclick="closeBookingModal(); window.location.reload()" 
+                            class="px-8 py-3 bg-emerald-800 text-white font-semibold rounded-2xl">Back to Site</button>
+                </div>
+            `;
+        }
+
+        function init() {
+            initializeTailwind();
+            initNavbar();
+            console.log('%c[Sausage Therapy] Updated for Mudgee & Central West NSW targeting.', 'color:#166534');
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>
