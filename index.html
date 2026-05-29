@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional therapy dog services on the Sunshine Coast - NDIS registered, corporate wellness, and mobile therapy sessions with qualified dachshunds">
+    <title>Sausage Therapy | Professional Therapy Dog Services - Sunshine Coast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">🌭 Sausage Therapy</div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#ndis">NDIS</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn-primary" id="bookNowBtn">Book Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Professional Therapy Dog Services</h1>
+                <p class="tagline">Qualified dachshunds bringing joy, healing, and wellness to the Sunshine Coast</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary btn-large" id="heroBookBtn">Book a Session</button>
+                    <a href="#services" class="btn-secondary btn-large">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>1:1 Therapy Sessions</h3>
+                        <p class="price">$180 / hour</p>
+                        <p>Personalized therapy sessions tailored to individual needs</p>
+                        <button class="btn-secondary book-service" data-service="1:1 Therapy">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Corporate Wellness</h3>
+                        <p class="price">From $500</p>
+                        <p>Boost workplace morale and reduce stress with our corporate programs</p>
+                        <button class="btn-secondary book-service" data-service="Corporate">Book Now</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Mobile Therapy</h3>
+                        <p class="price">$250 / session</p>
+                        <p>We come to you - homes, schools, aged care facilities</p>
+                        <button class="btn-secondary book-service" data-service="Mobile">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ndis" class="ndis-section">
+            <div class="container">
+                <h2>NDIS Registered Provider</h2>
+                <p class="lead">We're proud to be an NDIS registered provider, offering animal-assisted therapy for participants with funding.</p>
+                <ul class="benefits-list">
+                    <li>✓ Qualified and insured therapy dogs</li>
+                    <li>✓ Experienced in working with diverse needs</li>
+                    <li>✓ Flexible scheduling to suit your plan</li>
+                    <li>✓ Support coordination available</li>
+                </ul>
+                <button class="btn-primary" id="ndisEnquiry">NDIS Enquiry</button>
+            </div>
+        </section>
+
+        <section id="shop" class="shop">
+            <div class="container">
+                <h2>Shop</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🌭</div>
+                        <h3>Wiener Coasters (Set of 4)</h3>
+                        <p class="price">$25</p>
+                        <button class="btn-secondary add-to-cart" data-product="Wiener Coasters" data-price="25">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">📓</div>
+                        <h3>Therapy Journal</h3>
+                        <p class="price">$35</p>
+                        <button class="btn-secondary add-to-cart" data-product="Therapy Journal" data-price="35">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">👕</div>
+                        <h3>Sausage Therapy Merch</h3>
+                        <p class="price">$45</p>
+                        <button class="btn-secondary add-to-cart" data-product="Merch" data-price="45">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Cart (<span id="cartCount">0</span> items)</h3>
+                    <p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+                    <button class="btn-primary" id="checkoutBtn" disabled>Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <select name="interest">
+                        <option value="">I'm interested in...</option>
+                        <option value="1:1">1:1 Therapy Sessions</option>
+                        <option value="corporate">Corporate Wellness</option>
+                        <option value="mobile">Mobile Therapy</option>
+                        <option value="ndis">NDIS Services</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="message" placeholder="Tell us about your needs" rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Send Enquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sausage Therapy | Emily Blue Richards / Noosa Dachshunds</p>
+            <p>NDIS Registered Provider | Sunshine Coast, Queensland</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Session</h2>
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="service" id="serviceSelect" required>
+                    <option value="">Select a Service</option>
+                    <option value="1:1 Therapy">1:1 Therapy Session ($180/hr)</option>
+                    <option value="Corporate">Corporate Wellness (from $500)</option>
+                    <option value="Mobile">Mobile Therapy ($250/session)</option>
+                    <option value="NDIS">NDIS Service</option>
+                </select>
+                <input type="date" name="preferredDate" required>
+                <textarea name="notes" placeholder="Any special requirements or notes" rows="3"></textarea>
+                <button type="submit" class="btn-primary">Submit Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vercel Speed Insights -->
+    <script>
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
